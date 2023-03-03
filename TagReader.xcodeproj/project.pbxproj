@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE70512F29B22AEE00AE4FAA /* TagReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70512E29B22AEE00AE4FAA /* TagReaderApp.swift */; };
+		BE70513129B22AEE00AE4FAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70513029B22AEE00AE4FAA /* ContentView.swift */; };
+		BE70513329B22AEF00AE4FAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE70513229B22AEF00AE4FAA /* Assets.xcassets */; };
+		BE70513629B22AEF00AE4FAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE70513529B22AEF00AE4FAA /* Preview Assets.xcassets */; };
+		BE70514029B22AEF00AE4FAA /* TagReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70513F29B22AEF00AE4FAA /* TagReaderTests.swift */; };
+		BE70514A29B22AF000AE4FAA /* TagReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70514929B22AF000AE4FAA /* TagReaderUITests.swift */; };
+		BE70514C29B22AF000AE4FAA /* TagReaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70514B29B22AF000AE4FAA /* TagReaderUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE70513C29B22AEF00AE4FAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE70512329B22AEE00AE4FAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE70512A29B22AEE00AE4FAA;
+			remoteInfo = TagReader;
+		};
+		BE70514629B22AF000AE4FAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE70512329B22AEE00AE4FAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE70512A29B22AEE00AE4FAA;
+			remoteInfo = TagReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE70512B29B22AEE00AE4FAA /* TagReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TagReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE70512E29B22AEE00AE4FAA /* TagReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagReaderApp.swift; sourceTree = "<group>"; };
+		BE70513029B22AEE00AE4FAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE70513229B22AEF00AE4FAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE70513529B22AEF00AE4FAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE70513B29B22AEF00AE4FAA /* TagReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TagReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE70513F29B22AEF00AE4FAA /* TagReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagReaderTests.swift; sourceTree = "<group>"; };
+		BE70514529B22AF000AE4FAA /* TagReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TagReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE70514929B22AF000AE4FAA /* TagReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagReaderUITests.swift; sourceTree = "<group>"; };
+		BE70514B29B22AF000AE4FAA /* TagReaderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagReaderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE70512829B22AEE00AE4FAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE70513829B22AEF00AE4FAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE70514229B22AF000AE4FAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE70512229B22AEE00AE4FAA = {
+			isa = PBXGroup;
+			children = (
+				BE70512D29B22AEE00AE4FAA /* TagReader */,
+				BE70513E29B22AEF00AE4FAA /* TagReaderTests */,
+				BE70514829B22AF000AE4FAA /* TagReaderUITests */,
+				BE70512C29B22AEE00AE4FAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE70512C29B22AEE00AE4FAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE70512B29B22AEE00AE4FAA /* TagReader.app */,
+				BE70513B29B22AEF00AE4FAA /* TagReaderTests.xctest */,
+				BE70514529B22AF000AE4FAA /* TagReaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE70512D29B22AEE00AE4FAA /* TagReader */ = {
+			isa = PBXGroup;
+			children = (
+				BE70512E29B22AEE00AE4FAA /* TagReaderApp.swift */,
+				BE70513029B22AEE00AE4FAA /* ContentView.swift */,
+				BE70513229B22AEF00AE4FAA /* Assets.xcassets */,
+				BE70513429B22AEF00AE4FAA /* Preview Content */,
+			);
+			path = TagReader;
+			sourceTree = "<group>";
+		};
+		BE70513429B22AEF00AE4FAA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BE70513529B22AEF00AE4FAA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE70513E29B22AEF00AE4FAA /* TagReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE70513F29B22AEF00AE4FAA /* TagReaderTests.swift */,
+			);
+			path = TagReaderTests;
+			sourceTree = "<group>";
+		};
+		BE70514829B22AF000AE4FAA /* TagReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE70514929B22AF000AE4FAA /* TagReaderUITests.swift */,
+				BE70514B29B22AF000AE4FAA /* TagReaderUITestsLaunchTests.swift */,
+			);
+			path = TagReaderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE70512A29B22AEE00AE4FAA /* TagReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE70514F29B22AF000AE4FAA /* Build configuration list for PBXNativeTarget "TagReader" */;
+			buildPhases = (
+				BE70512729B22AEE00AE4FAA /* Sources */,
+				BE70512829B22AEE00AE4FAA /* Frameworks */,
+				BE70512929B22AEE00AE4FAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TagReader;
+			productName = TagReader;
+			productReference = BE70512B29B22AEE00AE4FAA /* TagReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE70513A29B22AEF00AE4FAA /* TagReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE70515229B22AF000AE4FAA /* Build configuration list for PBXNativeTarget "TagReaderTests" */;
+			buildPhases = (
+				BE70513729B22AEF00AE4FAA /* Sources */,
+				BE70513829B22AEF00AE4FAA /* Frameworks */,
+				BE70513929B22AEF00AE4FAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE70513D29B22AEF00AE4FAA /* PBXTargetDependency */,
+			);
+			name = TagReaderTests;
+			productName = TagReaderTests;
+			productReference = BE70513B29B22AEF00AE4FAA /* TagReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE70514429B22AF000AE4FAA /* TagReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE70515529B22AF000AE4FAA /* Build configuration list for PBXNativeTarget "TagReaderUITests" */;
+			buildPhases = (
+				BE70514129B22AF000AE4FAA /* Sources */,
+				BE70514229B22AF000AE4FAA /* Frameworks */,
+				BE70514329B22AF000AE4FAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE70514729B22AF000AE4FAA /* PBXTargetDependency */,
+			);
+			name = TagReaderUITests;
+			productName = TagReaderUITests;
+			productReference = BE70514529B22AF000AE4FAA /* TagReaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE70512329B22AEE00AE4FAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BE70512A29B22AEE00AE4FAA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					BE70513A29B22AEF00AE4FAA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = BE70512A29B22AEE00AE4FAA;
+					};
+					BE70514429B22AF000AE4FAA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = BE70512A29B22AEE00AE4FAA;
+					};
+				};
+			};
+			buildConfigurationList = BE70512629B22AEE00AE4FAA /* Build configuration list for PBXProject "TagReader" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE70512229B22AEE00AE4FAA;
+			productRefGroup = BE70512C29B22AEE00AE4FAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE70512A29B22AEE00AE4FAA /* TagReader */,
+				BE70513A29B22AEF00AE4FAA /* TagReaderTests */,
+				BE70514429B22AF000AE4FAA /* TagReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE70512929B22AEE00AE4FAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE70513629B22AEF00AE4FAA /* Preview Assets.xcassets in Resources */,
+				BE70513329B22AEF00AE4FAA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE70513929B22AEF00AE4FAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE70514329B22AF000AE4FAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE70512729B22AEE00AE4FAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE70513129B22AEE00AE4FAA /* ContentView.swift in Sources */,
+				BE70512F29B22AEE00AE4FAA /* TagReaderApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE70513729B22AEF00AE4FAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE70514029B22AEF00AE4FAA /* TagReaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE70514129B22AF000AE4FAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE70514C29B22AF000AE4FAA /* TagReaderUITestsLaunchTests.swift in Sources */,
+				BE70514A29B22AF000AE4FAA /* TagReaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE70513D29B22AEF00AE4FAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE70512A29B22AEE00AE4FAA /* TagReader */;
+			targetProxy = BE70513C29B22AEF00AE4FAA /* PBXContainerItemProxy */;
+		};
+		BE70514729B22AF000AE4FAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE70512A29B22AEE00AE4FAA /* TagReader */;
+			targetProxy = BE70514629B22AF000AE4FAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BE70514D29B22AF000AE4FAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE70514E29B22AF000AE4FAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE70515029B22AF000AE4FAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TagReader/Preview Content\"";
+				DEVELOPMENT_TEAM = 7W7BBEVAYM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lvup.TagReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE70515129B22AF000AE4FAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TagReader/Preview Content\"";
+				DEVELOPMENT_TEAM = 7W7BBEVAYM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lvup.TagReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE70515329B22AF000AE4FAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7W7BBEVAYM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lvup.TagReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TagReader.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TagReader";
+			};
+			name = Debug;
+		};
+		BE70515429B22AF000AE4FAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7W7BBEVAYM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lvup.TagReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TagReader.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TagReader";
+			};
+			name = Release;
+		};
+		BE70515629B22AF000AE4FAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7W7BBEVAYM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lvup.TagReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TagReader;
+			};
+			name = Debug;
+		};
+		BE70515729B22AF000AE4FAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7W7BBEVAYM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lvup.TagReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TagReader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE70512629B22AEE00AE4FAA /* Build configuration list for PBXProject "TagReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE70514D29B22AF000AE4FAA /* Debug */,
+				BE70514E29B22AF000AE4FAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE70514F29B22AF000AE4FAA /* Build configuration list for PBXNativeTarget "TagReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE70515029B22AF000AE4FAA /* Debug */,
+				BE70515129B22AF000AE4FAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE70515229B22AF000AE4FAA /* Build configuration list for PBXNativeTarget "TagReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE70515329B22AF000AE4FAA /* Debug */,
+				BE70515429B22AF000AE4FAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE70515529B22AF000AE4FAA /* Build configuration list for PBXNativeTarget "TagReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE70515629B22AF000AE4FAA /* Debug */,
+				BE70515729B22AF000AE4FAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE70512329B22AEE00AE4FAA /* Project object */;
+}
