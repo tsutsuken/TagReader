@@ -17,6 +17,10 @@ class NFCReader: NSObject, ObservableObject, NFCNDEFReaderSessionDelegate {
       session?.begin()
   }
   
+  func stopSession() {
+      session?.invalidate()
+  }
+  
   // MARK: NFCNDEFReaderSessionDelegate
   
   func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {

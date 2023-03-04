@@ -26,6 +26,9 @@ struct ReadNFCView: View {
         }
       }
     }
+    .onDisappear() {
+      reader.scan()
+    }
   }
 }
 
