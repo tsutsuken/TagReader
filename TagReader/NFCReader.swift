@@ -37,26 +37,35 @@ class NFCReader: NSObject, ObservableObject, NFCNDEFReaderSessionDelegate {
   private func setMessages(messages: [NFCNDEFMessage]) {
     var newMessages: [Message] = []
     for message in messages {
-      for record in message.records {
-        // PayloadがURIの場合
-        let payloadURI = record.wellKnownTypeURIPayload()
-        print("payloadURI: \(payloadURI?.absoluteString ?? "")")
-        if let payloadURI {
-          let newMessage = Message(text: payloadURI.absoluteString)
+      for payload in message.records {
+        if let payloadContent = payloadContent(payload: payload) {
+          let newMessage = Message(text: payloadContent)
           newMessages.append(newMessage)
-          continue
-        }
-        
-        // PayloadがTextの場合
-        let (payloadText, _) = record.wellKnownTypeTextPayload()
-        print("payloadText: \(payloadText ?? "")")
-        if let payloadText {
-          let newMessage = Message(text: payloadText)
-          newMessages.append(newMessage)
-          continue
         }
       }
     }
     self.messages = newMessages
+  }
+  
+  private func payloadContent(payload: NFCNDEFPayload) -> String? {
+    guard let type = String(data: payload.type, encoding: .utf8) else {
+      return nil
+    }
+    
+    if type == "T" {
+      // PayloadがTextの場合
+      let (payloadText, _) = payload.wellKnownTypeTextPayload()
+      print("payloadText: \(payloadText ?? "")")
+      return payloadText
+    } else if type == "U" {
+      // PayloadがURIの場合
+      let payloadURI = payload.wellKnownTypeURIPayload()
+      print("payloadURI: \(payloadURI?.absoluteString ?? "")")
+      return payloadURI?.absoluteString
+    } else {
+      // その他の場合
+      print("未対応のPayloadTypeです。")
+      return nil
+    }
   }
 }
