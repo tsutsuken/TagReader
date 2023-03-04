@@ -11,19 +11,18 @@ struct ReadNFCView: View {
   @StateObject var reader = NFCReader()
   
   var body: some View {
-    VStack {
-        Button("NFCを読み取る") {
-          reader.scan()
-        }
-        .padding()
-        .background(Color.blue)
-        .foregroundColor(.white)
-        .cornerRadius(8)
+    NavigationView {
       List(reader.messages) { message in
         Section {
           MessageView(message: message)
-        } header: {
-          Text("読み取りしたNFCタグ一覧")
+        }
+      }
+      .navigationTitle("読み取り結果")
+      .toolbar {
+        ToolbarItem(placement: .navigationBarTrailing){
+            Button("NFCタグを読み取る") {
+              reader.scan()
+            }
         }
       }
     }
