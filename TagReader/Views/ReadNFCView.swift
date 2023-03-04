@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ReadNFCView: View {
-  @ObservedObject var reader = NFCReader()
+  @StateObject var reader = NFCReader()
   
   var body: some View {
     VStack {
