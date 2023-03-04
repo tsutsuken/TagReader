@@ -38,8 +38,8 @@ class NFCReader: NSObject, ObservableObject, NFCNDEFReaderSessionDelegate {
     var newMessages: [Message] = []
     for message in messages {
       for record in message.records {
-        let payload = record.payload
-        if let payloadText = String(data: payload, encoding: .utf8) {
+        let (payloadText, _) = record.wellKnownTypeTextPayload()
+        if let payloadText {
           let newMessage = Message(text: payloadText)
           newMessages.append(newMessage)
         }
