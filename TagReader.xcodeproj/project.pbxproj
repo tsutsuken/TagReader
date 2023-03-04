@@ -14,6 +14,8 @@
 		BE70514029B22AEF00AE4FAA /* TagReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70513F29B22AEF00AE4FAA /* TagReaderTests.swift */; };
 		BE70514A29B22AF000AE4FAA /* TagReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70514929B22AF000AE4FAA /* TagReaderUITests.swift */; };
 		BE70514C29B22AF000AE4FAA /* TagReaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70514B29B22AF000AE4FAA /* TagReaderUITestsLaunchTests.swift */; };
+		BE70515929B22F8E00AE4FAA /* ReadNFCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70515829B22F8E00AE4FAA /* ReadNFCView.swift */; };
+		BE70515D29B230EF00AE4FAA /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE70515C29B230EF00AE4FAA /* CoreNFC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,10 @@
 		BE70514529B22AF000AE4FAA /* TagReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TagReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE70514929B22AF000AE4FAA /* TagReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagReaderUITests.swift; sourceTree = "<group>"; };
 		BE70514B29B22AF000AE4FAA /* TagReaderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagReaderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BE70515829B22F8E00AE4FAA /* ReadNFCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadNFCView.swift; sourceTree = "<group>"; };
+		BE70515A29B230C700AE4FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BE70515C29B230EF00AE4FAA /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
+		BE70515E29B2318C00AE4FAA /* TagReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TagReader.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE70515D29B230EF00AE4FAA /* CoreNFC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,7 @@
 				BE70513E29B22AEF00AE4FAA /* TagReaderTests */,
 				BE70514829B22AF000AE4FAA /* TagReaderUITests */,
 				BE70512C29B22AEE00AE4FAA /* Products */,
+				BE70515B29B230EF00AE4FAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +102,11 @@
 		BE70512D29B22AEE00AE4FAA /* TagReader */ = {
 			isa = PBXGroup;
 			children = (
+				BE70515E29B2318C00AE4FAA /* TagReader.entitlements */,
+				BE70515A29B230C700AE4FAA /* Info.plist */,
 				BE70512E29B22AEE00AE4FAA /* TagReaderApp.swift */,
 				BE70513029B22AEE00AE4FAA /* ContentView.swift */,
+				BE70515829B22F8E00AE4FAA /* ReadNFCView.swift */,
 				BE70513229B22AEF00AE4FAA /* Assets.xcassets */,
 				BE70513429B22AEF00AE4FAA /* Preview Content */,
 			);
@@ -125,6 +136,14 @@
 				BE70514B29B22AF000AE4FAA /* TagReaderUITestsLaunchTests.swift */,
 			);
 			path = TagReaderUITests;
+			sourceTree = "<group>";
+		};
+		BE70515B29B230EF00AE4FAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE70515C29B230EF00AE4FAA /* CoreNFC.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE70515929B22F8E00AE4FAA /* ReadNFCView.swift in Sources */,
 				BE70513129B22AEE00AE4FAA /* ContentView.swift in Sources */,
 				BE70512F29B22AEE00AE4FAA /* TagReaderApp.swift in Sources */,
 			);
@@ -414,12 +434,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TagReader/TagReader.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TagReader/Preview Content\"";
 				DEVELOPMENT_TEAM = 7W7BBEVAYM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TagReader/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "NFCタグの読み取り・書き込みのために利用します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -443,12 +466,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TagReader/TagReader.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TagReader/Preview Content\"";
 				DEVELOPMENT_TEAM = 7W7BBEVAYM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TagReader/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "NFCタグの読み取り・書き込みのために利用します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
