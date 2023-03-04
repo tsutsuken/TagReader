@@ -18,7 +18,7 @@
 		BE70515D29B230EF00AE4FAA /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE70515C29B230EF00AE4FAA /* CoreNFC.framework */; };
 		BE70516129B2DB5A00AE4FAA /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70516029B2DB5A00AE4FAA /* NFCReader.swift */; };
 		BE70516329B2DC1700AE4FAA /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70516229B2DC1700AE4FAA /* MessageView.swift */; };
-		BE70516629B2E3AF00AE4FAA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70516529B2E3AF00AE4FAA /* Message.swift */; };
+		BE70516629B2E3AF00AE4FAA /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70516529B2E3AF00AE4FAA /* Payload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,7 @@
 		BE70515E29B2318C00AE4FAA /* TagReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TagReader.entitlements; sourceTree = "<group>"; };
 		BE70516029B2DB5A00AE4FAA /* NFCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
 		BE70516229B2DC1700AE4FAA /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
-		BE70516529B2E3AF00AE4FAA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		BE70516529B2E3AF00AE4FAA /* Payload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +166,7 @@
 		BE70516429B2E3A100AE4FAA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BE70516529B2E3AF00AE4FAA /* Message.swift */,
+				BE70516529B2E3AF00AE4FAA /* Payload.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -306,7 +306,7 @@
 				BE70513129B22AEE00AE4FAA /* ContentView.swift in Sources */,
 				BE70512F29B22AEE00AE4FAA /* TagReaderApp.swift in Sources */,
 				BE70516329B2DC1700AE4FAA /* MessageView.swift in Sources */,
-				BE70516629B2E3AF00AE4FAA /* Message.swift in Sources */,
+				BE70516629B2E3AF00AE4FAA /* Payload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

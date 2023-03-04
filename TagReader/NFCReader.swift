@@ -9,7 +9,7 @@ import CoreNFC
 import Foundation
 
 class NFCReader: NSObject, ObservableObject, NFCNDEFReaderSessionDelegate {
-  @Published var messages: [Message] = []
+  @Published var payloads: [Payload] = []
   private var session: NFCNDEFReaderSession?
   
   func scan() {
@@ -29,22 +29,22 @@ class NFCReader: NSObject, ObservableObject, NFCNDEFReaderSessionDelegate {
   
   func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
     print("readerSession session: \(session) didDetectNDEFs: \(messages)")
-    setMessages(messages: messages)
+    setPayloads(messages: messages)
   }
   
   // MARK: Private functions
   
-  private func setMessages(messages: [NFCNDEFMessage]) {
-    var newMessages: [Message] = []
+  private func setPayloads(messages: [NFCNDEFMessage]) {
+    var newPayloads: [Payload] = []
     for message in messages {
       for payload in message.records {
         if let payloadContent = payloadContent(payload: payload) {
-          let newMessage = Message(text: payloadContent)
-          newMessages.append(newMessage)
+          let newPayload = Payload(text: payloadContent)
+          newPayloads.append(newPayload)
         }
       }
     }
-    self.messages = newMessages
+    self.payloads = newPayloads
   }
   
   private func payloadContent(payload: NFCNDEFPayload) -> String? {
