@@ -38,10 +38,22 @@ class NFCReader: NSObject, ObservableObject, NFCNDEFReaderSessionDelegate {
     var newMessages: [Message] = []
     for message in messages {
       for record in message.records {
+        // PayloadがURIの場合
+        let payloadURI = record.wellKnownTypeURIPayload()
+        print("payloadURI: \(payloadURI?.absoluteString ?? "")")
+        if let payloadURI {
+          let newMessage = Message(text: payloadURI.absoluteString)
+          newMessages.append(newMessage)
+          continue
+        }
+        
+        // PayloadがTextの場合
         let (payloadText, _) = record.wellKnownTypeTextPayload()
+        print("payloadText: \(payloadText ?? "")")
         if let payloadText {
           let newMessage = Message(text: payloadText)
           newMessages.append(newMessage)
+          continue
         }
       }
     }
