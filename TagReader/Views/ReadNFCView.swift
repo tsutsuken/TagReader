@@ -14,7 +14,7 @@ struct ReadNFCView: View {
     NavigationView {
       List(reader.payloads) { payload in
         Section {
-          MessageView(message: payload)
+          PayloadView(payload: payload)
         }
       }
       .navigationTitle("読み取り結果")
