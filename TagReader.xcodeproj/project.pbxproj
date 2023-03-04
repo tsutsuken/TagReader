@@ -16,6 +16,7 @@
 		BE70514C29B22AF000AE4FAA /* TagReaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70514B29B22AF000AE4FAA /* TagReaderUITestsLaunchTests.swift */; };
 		BE70515929B22F8E00AE4FAA /* ReadNFCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70515829B22F8E00AE4FAA /* ReadNFCView.swift */; };
 		BE70515D29B230EF00AE4FAA /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE70515C29B230EF00AE4FAA /* CoreNFC.framework */; };
+		BE70516129B2DB5A00AE4FAA /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70516029B2DB5A00AE4FAA /* NFCReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		BE70515A29B230C700AE4FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BE70515C29B230EF00AE4FAA /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
 		BE70515E29B2318C00AE4FAA /* TagReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TagReader.entitlements; sourceTree = "<group>"; };
+		BE70516029B2DB5A00AE4FAA /* NFCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,11 +104,12 @@
 		BE70512D29B22AEE00AE4FAA /* TagReader */ = {
 			isa = PBXGroup;
 			children = (
-				BE70515E29B2318C00AE4FAA /* TagReader.entitlements */,
-				BE70515A29B230C700AE4FAA /* Info.plist */,
 				BE70512E29B22AEE00AE4FAA /* TagReaderApp.swift */,
 				BE70513029B22AEE00AE4FAA /* ContentView.swift */,
-				BE70515829B22F8E00AE4FAA /* ReadNFCView.swift */,
+				BE70516029B2DB5A00AE4FAA /* NFCReader.swift */,
+				BE70515F29B2D9F200AE4FAA /* Views */,
+				BE70515E29B2318C00AE4FAA /* TagReader.entitlements */,
+				BE70515A29B230C700AE4FAA /* Info.plist */,
 				BE70513229B22AEF00AE4FAA /* Assets.xcassets */,
 				BE70513429B22AEF00AE4FAA /* Preview Content */,
 			);
@@ -144,6 +147,14 @@
 				BE70515C29B230EF00AE4FAA /* CoreNFC.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE70515F29B2D9F200AE4FAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE70515829B22F8E00AE4FAA /* ReadNFCView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE70516129B2DB5A00AE4FAA /* NFCReader.swift in Sources */,
 				BE70515929B22F8E00AE4FAA /* ReadNFCView.swift in Sources */,
 				BE70513129B22AEE00AE4FAA /* ContentView.swift in Sources */,
 				BE70512F29B22AEE00AE4FAA /* TagReaderApp.swift in Sources */,
